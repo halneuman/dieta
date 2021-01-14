@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Javascript UI clock</title>
+        <style type="text/css">
+
+body{
+    /*
+margin: 246px 348px;
+/*background: url(ra2.jpg);*/
+    background-repeat: no-repeat;
+}
+
+.clock{
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(clo2.png);
+    background-size: 86%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(clo2.png);
+    background-size: 86%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+}
+
+.clock_center{
+position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00897e;
+    background: #0066ce;
+    background: #00adff;
+   /* box-shadow: 0px 0px 2px 0px hsl(0deg 0% 0%);*/
+            }
+            .clock_center:after{
+                            content: '';
+                            position: absolute;
+                            width: 8px;
+                            height: 8px;
+                            background: hsl(30 100% 50% / 1);
+                            background: #00a724;
+                            border-radius: 50%;
+                            margin: 6px;
+                            box-shadow: 0 0 0 3px #fff;
+                            }
+
+
+.clock:after{
+content: '';
+    position: absolute;
+    width: 326px;
+    height: 326px;
+/*    background: #f1e8d6;
+    box-shadow: inset -2px 1px 10px 1px, -1px 1px 0px 0px #e4c66f;*/
+    border-radius: 50%;
+    z-index: -1;
+    background-size: cover;
+
+content: '';
+    position: absolute;
+    width: 326px;
+    height: 326px;
+    /* background: #f1e8d6; */
+    /* box-shadow: inset -2px 1px 10px 1px, -1px 1px 0px 0px #e4c66f; */
+    border-radius: 50%;
+    z-index: -1;
+    background-size: cover;
+
+}
+
+.clock:before{
+content: '';
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    /* background: url(https://revista-mm.com/wp-content/uploads/2018/08/madera-1.jpg); */
+    background-size: contain;
+    border-radius: 50%;
+    /* box-shadow: inset 0px 1px 6px 1px #4e3a00; */
+    z-index: -1;
+
+content: '';
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    /* background: url(https://revista-mm.com/wp-content/uploads/2018/08/madera-1.jpg); */
+    background-size: contain;
+    border-radius: 50%;
+    /* box-shadow: inset 0px 1px 6px 1px #4e3a00; */
+    z-index: -1;
+
+}
+
+.clokc .hour,
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+
+.clock .hour, .hr {
+    width: 160px;
+    height: 160px;
+}
+
+
+.clock .min, .mn {
+    width: 190px;
+    height: 190px;
+}
+
+
+.clock .sec, .sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    position: absolute;
+    border-radius: 50%;
+}
+
+.lona{
+
+    }
+
+.hr:before{
+content: '';
+    position: absolute;
+    width: 14px;
+    height: 80px;
+    background: url(https://cadenaser00.epimg.net/ser/imagenes/2018/02/08/ciencia/1518115606_505176_1518120474_noticia_normal.jpg);
+    /* background: url(https://www.mifonditarestaurante.com/wp-content/uploads/2020/07/wood-2045379_1920-1.jpg); */
+    /* background: url(https://img.freepik.com/vector-gratis/fondo-textura-metal_46250-1854.jpg?size=626&ext=jpg); */
+    background: #463e4a;
+    box-shadow: 1px 1px 1px 1px #00000000;
+    z-index: 10;
+    border-radius: 6px;
+      
+
+content: '';
+    position: absolute;
+    width: 14px;
+    height: 80px;
+    background: url(https://cadenaser00.epimg.net/ser/imagenes/2018/02/08/ciencia/1518115606_505176_1518120474_noticia_normal.jpg);
+    /* background: url(https://www.mifonditarestaurante.com/wp-content/uploads/2020/07/wood-2045379_1920-1.jpg); */
+    /* background: url(https://img.freepik.com/vector-gratis/fondo-textura-metal_46250-1854.jpg?size=626&ext=jpg); */
+    background: #4400bd;
+    box-shadow: 1px 1px 1px 1px #00000000;
+    z-index: 10;
+    border-radius: 6px;
+
+        }
+
+.mn:before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 90px;
+    background: #bbbbbb;
+    background: url(https://www.mifonditarestaurante.com/wp-content/uploads/2020/07/wood-2045379_1920-1.jpg);
+    background: url(https://i.pinimg.com/564x/9e/9a/25/9e9a252….jpg);
+    z-index: 11;
+    background: #ff5e00;
+    background-size: contain;
+    border-radius: 4px;
+    
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 90px;
+    background: #bbbbbb;
+    background: url(https://www.mifonditarestaurante.com/wp-content/uploads/2020/07/wood-2045379_1920-1.jpg);
+    background: url(https://i.pinimg.com/564x/9e/9a/25/9e9a252….jpg);
+    z-index: 11;
+    background: #ff7600;
+    background: #ff9900;
+    background-size: contain;
+    border-radius: 4px;
+
+        }
+
+
+.sc:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 160px;
+    background: url(https://www.mifonditarestaurante.com/wp-content/uploads/2020/07/wood-2045379_1920-1.jpg);
+    background: url(https://img.freepik.com/vector-gratis/fondo-textura-metal_46250-1854.jpg?size=626&ext=jpg);
+    background: url(https://us.123rf.com/450wm/roystudio/roystudio1508/roystudio150800198/44092806-fondo-de-la-textura-del-metal-rojo-transparente-patr%C3%B3n.jpg?ver=6);
+    background: #008398;
+    background: linear-gradient(45deg, #00887c, #005765);
+    /* background: red; */
+    /* box-shadow: inset 1px 1px 0px 1px #00ffe98f, 1px 1px 0px 0px #0000002e; */
+    z-index: 12;
+    border-radius: 2px;
+
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 160px;
+    background: url(https://www.mifonditarestaurante.com/wp-content/uploads/2020/07/wood-2045379_1920-1.jpg);
+    background: url(https://img.freepik.com/vector-gratis/fondo-textura-metal_46250-1854.jpg?size=626&ext=jpg);
+    background: url(https://us.123rf.com/450wm/roystudio/roystudio1508/roystudio150800198/44092806-fondo-de-la-textura-del-metal-rojo-transparente-patr%C3%B3n.jpg?ver=6);
+    background: #ff00c8;
+    /* background: linear-gradient(45deg, #00887c, #005765); */
+    /* background: red; */
+    /* box-shadow: inset 1px 1px 0px 1px #00ffe98f, 1px 1px 0px 0px #0000002e; */
+    z-index: 12;
+    border-radius: 2px;
+        }
+
+
+#cuadro{
+
+
+position: absolute;
+    width: 366px;
+    height: 366px;
+    border: 10px solid #fff;
+    margin: -362px -24px;
+    box-shadow: 0 0 0 1000px #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #fff;
+    margin: -454px -91px;
+    box-shadow: 0 0 0 1000px #fff;
+    border-radius: 50%;
+
+position: absolute;
+    width: 366px;
+    height: 366px;
+    border: 10px solid #fff;
+    margin: -362px -24px;
+    box-shadow: 0 0 0 1000px #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #fff;
+    margin: -454px -91px;
+    box-shadow: 0 0 0 1000px #fff;
+    border-radius: 50%;
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+
+            <div class="clock_center"></div>
+
+        </div>
+
+        <div id="cuadro"></div>
+
+        <script>
+            const deg = 6;
+            const hr = document.querySelector('#hr');
+            const mn = document.querySelector('#mn');
+            const sc = document.querySelector('#sc');
+
+            setInterval(() => {
+
+            let day = new Date();
+            let hh = day.getHours() * 30;
+            let mm = day.getMinutes() * deg;
+            let ss = day.getSeconds() * deg;
+
+            hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
+           })
+
+/*
+            let day = new Date();
+            let hh = 13 * 30;
+            let mm = 5 * deg;
+            let ss = 15 * deg;
+
+            hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
+*/
+
+        </script>
+    </body>
+</html>
